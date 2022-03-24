@@ -3,6 +3,7 @@
     "/**/node_modules/**",
     "/.vscode/**",
     "/blocks/**",
-    "/scss/**"
+    "/scss/**",
+    "/vendor/**"
 ]
 }
