@@ -1,0 +1,4 @@
+.header__link {
+  @include reset-link;
+  @include font-params(14px, 18px, 500);
+}
