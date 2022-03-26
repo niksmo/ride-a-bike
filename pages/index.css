@@ -343,42 +343,75 @@ template {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../vendor/fonts/Inter-400.woff2) format("woff2"), url(../vendor/fonts/Inter-400.woff) format("woff");
+  src: url(../vendor/fonts/inter-400.woff2) format("woff2"), url(../vendor/fonts/inter-400.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(../vendor/fonts/Inter-500.woff2) format("woff2"), url(../vendor/fonts/Inter-500.woff) format("woff");
+  src: url(../vendor/fonts/inter-500.woff2) format("woff2"), url(../vendor/fonts/inter-500.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(../vendor/fonts/Inter-600.woff2) format("woff2"), url(../vendor/fonts/Inter-600.woff) format("woff");
+  src: url(../vendor/fonts/inter-600.woff2) format("woff2"), url(../vendor/fonts/inter-600.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(../vendor/fonts/Inter-700.woff2) format("woff2"), url(../vendor/fonts/Inter-700.woff) format("woff");
+  src: url(../vendor/fonts/inter-700.woff2) format("woff2"), url(../vendor/fonts/inter-700.woff) format("woff");
 }
 .page {
   max-width: 1440px;
+  margin: 0 auto;
   font-family: "Inter", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  background-color: antiquewhite;
+  background-color: #F4F4F4;
 }
 
-.page__element {
-  font-size: 50px;
-  line-height: 100px;
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 120px;
+  min-height: 74px;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav_theme_light {
   color: #151515;
+}
+
+.header__nav-list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.header__nav-item {
+  margin-left: 34px;
+}
+.header__nav-item:first-of-type {
+  margin-left: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */

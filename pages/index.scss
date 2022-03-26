@@ -3,4 +3,9 @@
 @import '../scss/variables/variables';
 @import '../scss/mixins/mixins';
 @import '../blocks/page/page';
-@import '../blocks/page/__element/page__element'
+@import '../blocks/header/header';
+@import '../blocks/header/__nav/header__nav';
+@import '../blocks/header/__nav/_theme/header__nav_theme_light.scss';
+@import '../blocks/header/__nav-list/header__nav-list';
+@import '../blocks/header/__nav-item/header__nav-item';
+@import '../blocks/header/__link/header__link'

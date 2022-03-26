@@ -9,6 +9,25 @@
   padding: 0;  
 }
 
+@mixin reset-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin font-params($size, $lh, $weight: 400, $ltr-space: normal) {
+  font-size: $size;
+  line-height: $lh;
+
+  @if $weight != 400 {
+    font-weight: $weight;
+  }
+  
+  @if $ltr-space != normal {
+    letter-spacing: $ltr-space;
+  }
+
+}
+
 @mixin rounded-corner {
   
 }
