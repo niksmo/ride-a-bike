@@ -8,6 +8,15 @@
 </head>
 <body class="page">
   <header class="header">
+    <svg class="header__burger" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="открыть меню">
+      <line y1="1.5" x2="22" y2="1.5" stroke="#151515" stroke-width="3"/>
+      <line y1="9.5" x2="22" y2="9.5" stroke="#151515" stroke-width="3"/>
+      <line y1="17.5" x2="22" y2="17.5" stroke="#151515" stroke-width="3"/>
+    </svg>
+    <svg class="header__close-menu header__close-menu_hidden" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="закрыть меню">
+      <line x1="8.22179" y1="8.72205" x2="23.7781" y2="24.2784" stroke="#151515" stroke-width="3"/>
+      <line x1="8.22181" y1="24.2782" x2="23.7782" y2="8.72186" stroke="#151515" stroke-width="3"/>
+    </svg>
     <nav class="header__nav header__nav_theme_light">
       <ul class="header__nav-list">
         <li class="header__nav-item">
@@ -25,21 +34,15 @@
   </header>
 
   <main class="content">
-    <section class="landing-main">
-      <div class="two-columns">
-        <div class="two-columns__left">
-          <h1 class="title"></h1>
-          <p class="paragraph"></p>
-          <a href="#" class="link-button"></a>
-          <figure class="bicycle">
-            <img class="bicylce__image" src="./images/bike-fix_compressed.png" alt="фотография шоссейного велосипеда, модель Cannondale Systemsix">
-            <figcaption class="bicycle__model">Cannondale Systemsix</figcaption>
-          </figure>
-        </div>
-        <div class="two-columns__right">
-          <img class="landing-main__image" src="./images/landing-main__image.png" alt="пейзаж веломаршрута в еловом лесу, на фоне горного ландшафта">
-        </div>
-      </div>
+    <section class="section landing-main">
+      <h1 class="title"><Шоссе, ТТ&nbsp;и&nbsp;Грэвел/h1>
+      <img class="section__image landing-main__image" src="./images/landing-main__image.png" alt="пейзаж веломаршрута в еловом лесу, на фоне горного ландшафта">
+      <p class="paragraph">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
+      <a class="link-button" href="#">Подробнее</a>
+      <figure class="section__figure landing-main__bicycle">
+        <img class="section__figure-image landing-main__bicycle-image" src="./images/bike-fix_compressed.png" alt="фотография шоссейного велосипеда, модель Cannondale Systemsix">
+        <figcaption class="section__figure-caption landing-main__bicycle-caption">Cannondale Systemsix</figcaption>
+      </figure>
     </section>
   </main>
 

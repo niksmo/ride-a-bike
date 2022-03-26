@@ -2,6 +2,12 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 120px;
   min-height: 74px;
+  padding-right: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding-right: 120px;
+  }
 }
