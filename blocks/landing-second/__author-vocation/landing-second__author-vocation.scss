@@ -2,4 +2,11 @@
   @include reset-text;
   @include font-params(10px, 16px);
   color: $text-secondary-color-light;
+  opacity: .7;
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-second__author-vocation {
+    @include font-params(16px, 28px);
+  }
 }

@@ -9,3 +9,32 @@
     position: absolute;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .landing-second {
+    grid-template-areas:
+    'image quote'
+    'image caption';
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: auto auto;
+    column-gap: 40px;
+    &::before {
+      content: none;
+    }
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-second {
+    grid-template-columns: 45% 40%;
+    column-gap: 80px;
+  } 
+}
+
+@media screen and (min-width: 1280px) {
+  .landing-second {
+    grid-template-columns: 650px 470px;
+    column-gap: 80px;
+  } 
+}
+
