@@ -484,15 +484,28 @@ template {
     padding-right: 0;
   }
 }
+.page__section {
+  position: relative;
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .page__section:first-of-type {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .page__section {
+    padding: 60px 0;
+  }
+  .page__section:first-of-type {
+    padding-top: 0;
+  }
+}
 .section {
   display: grid;
   grid-template-columns: 100%;
   row-gap: 40px;
-}
-
-.landing-main {
-  position: relative;
-  padding: 40px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -534,26 +547,33 @@ template {
   grid-row: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .landing-main__title {
+    margin-top: 40px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .landing-main__title {
     margin-top: 80px;
   }
 }
-.section__image {
+.section-image {
   box-sizing: border-box;
   width: 100%;
 }
 
-.landing-main__image {
+.landing-main__section-image {
   grid-row: 2;
   grid-column: 1;
   padding-left: 30px;
   justify-self: end;
   max-width: 610px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .landing-main__image {
+  .landing-main__section-image {
     grid-column: 2;
     grid-row: 1/5;
     padding-left: 0;
@@ -563,7 +583,7 @@ template {
   }
 }
 @media screen and (min-width: 1024px) {
-  .landing-main__image {
+  .landing-main__section-image {
     width: 43vw;
   }
 }
@@ -683,7 +703,7 @@ template {
     grid-auto-rows: -webkit-min-content;
     grid-auto-rows: min-content;
     position: absolute;
-    top: 34%;
+    top: 29%;
     -moz-column-gap: 30px;
          column-gap: 30px;
     grid-column: 1;
@@ -704,5 +724,127 @@ template {
 @media screen and (min-width: 1024px) {
   .landing-main__caption {
     font-size: 18px;
+  }
+}
+.landing-second::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e3e3e3;
+  top: 40px;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-second {
+    grid-template-areas: "image quote" "image caption";
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: auto auto;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .landing-second::before {
+    content: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .landing-second {
+    grid-template-columns: 45% 40%;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .landing-second {
+    grid-template-columns: 650px 470px;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+}
+.landing-second__section-image {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-second__section-image {
+    grid-area: image;
+    margin-top: 0;
+  }
+}
+.landing-second__blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.landing-second__quote {
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+  line-height: 29px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-second__quote {
+    grid-area: quote;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .landing-second__quote {
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+}
+.landing-second__caption-wrapper {
+  display: grid;
+  row-gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-second__caption-wrapper {
+    grid-area: caption;
+    grid-auto-rows: -webkit-min-content;
+    grid-auto-rows: min-content;
+    align-self: end;
+    row-gap: 6px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .landing-second__caption-wrapper {
+    row-gap: 10px;
+  }
+}
+.landing-second__author-name {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-second__author-name {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+  }
+}
+.landing-second__author-vocation {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  line-height: 16px;
+  color: #222222;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-second__author-vocation {
+    font-size: 16px;
+    line-height: 28px;
   }
 }/*# sourceMappingURL=index.css.map */
