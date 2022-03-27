@@ -1,0 +1,4 @@
+.landing-second__author-name {
+  @include reset-text;
+  @include font-params(14px, 22px, 500);
+}

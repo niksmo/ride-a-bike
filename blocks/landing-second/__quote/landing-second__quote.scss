@@ -1,0 +1,4 @@
+.landing-second__quote {
+  @include reset-text;
+  @include font-params(23px, 29px, 600, -.5px);
+}

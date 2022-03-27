@@ -1,0 +1,5 @@
+.landing-second__author-vocation {
+  @include reset-text;
+  @include font-params(10px, 16px);
+  color: $text-secondary-color-light;
+}
