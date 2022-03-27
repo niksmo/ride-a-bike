@@ -3,6 +3,8 @@
 @import '../scss/variables/variables';
 @import '../scss/mixins/mixins';
 @import '../blocks/page/page';
+
+// Header
 @import '../blocks/header/header';
 @import '../blocks/header/__burger/header__burger';
 @import '../blocks/header/__burger/_hidden/header__burger_hidden';
@@ -11,4 +13,21 @@
 @import '../blocks/header/__nav/_theme/header__nav_theme_light';
 @import '../blocks/header/__nav-list/header__nav-list';
 @import '../blocks/header/__nav-item/header__nav-item';
-@import '../blocks/header/__link/header__link'
+@import '../blocks/header/__link/header__link';
+
+@import '../blocks/content/content';
+
+// Main section
+@import '../blocks/section/section';
+@import '../blocks/landing-main/landing-main';
+@import '../blocks/title/title';
+@import '../blocks/landing-main/__title/landing-main__title';
+@import '../blocks/section/__image/section__image';
+@import '../blocks/landing-main/__image/landing-main__image';
+@import '../blocks/paragraph/paragraph';
+@import '../blocks/landing-main/__paragraph/landing-main__paragraph';
+@import '../blocks/link-button/link-button';
+@import '../blocks/landing-main/__link-button/landing-main__link-button';
+@import '../blocks/landing-main/__sticky-wrapper/landing-main__sticky-wrapper';
+@import '../blocks/landing-main/__sticky-image/section__sticky-image';
+@import '../blocks/landing-main/__caption/landing-main__caption';

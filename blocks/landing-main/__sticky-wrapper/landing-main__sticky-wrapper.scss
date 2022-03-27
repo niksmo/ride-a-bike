@@ -1,0 +1,20 @@
+.landing-main__sticky-wrapper {
+  grid-column: 1;
+  grid-row: 2;
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-main__sticky-wrapper {
+    grid-column: 2;
+    grid-row: 1/5;
+    padding: 0 0 10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .landing-main__sticky-wrapper {
+    padding: 0 0 79px 50px;
+  }
+}

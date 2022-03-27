@@ -1,0 +1,11 @@
+.title {
+  @include reset-text;
+  @include font-params(32px, 40px, 700, -.5px);
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    @include font-params(55px, 60px)
+  }
+  
+}
