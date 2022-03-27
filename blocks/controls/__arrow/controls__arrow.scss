@@ -1,0 +1,11 @@
+.controls__arrow {
+  width: 24px;
+  height: 24px;
+  background-color: #EBEBEB;
+  border-radius: 50%;
+  display: grid;
+  cursor: pointer;
+  &:hover {
+    opacity: .6;
+  }
+}

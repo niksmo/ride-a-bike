@@ -847,4 +847,66 @@ template {
     font-size: 16px;
     line-height: 28px;
   }
+}
+.trails {
+  display: grid;
+}
+
+.landing-third__trails {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.trail {
+  display: grid;
+}
+
+.controls {
+  display: grid;
+  grid-auto-flow: column;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.landing-third__controls {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+}
+
+.controls__arrow {
+  width: 24px;
+  height: 24px;
+  background-color: #EBEBEB;
+  border-radius: 50%;
+  display: grid;
+  cursor: pointer;
+}
+.controls__arrow:hover {
+  opacity: 0.6;
+}
+
+.controls__arrow_left::before {
+  content: "";
+  align-self: center;
+  justify-self: center;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-left: 1px solid #151515;
+  border-top: 1px solid #151515;
+  transform: rotate(-45deg) translate(1px, 1px);
+}
+
+.controls__arrow_right::before {
+  content: "";
+  align-self: center;
+  justify-self: center;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-left: 1px solid #151515;
+  border-top: 1px solid #151515;
+  transform: rotate(135deg) translate(1px, 1px);
 }/*# sourceMappingURL=index.css.map */

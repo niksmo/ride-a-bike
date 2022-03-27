@@ -1,0 +1,13 @@
+.controls__arrow_left {
+  &::before {
+    content: "";
+    align-self: center;
+    justify-self: center;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid #151515;
+    border-top: 1px solid #151515;
+    transform: rotate(-45deg) translate(1px, 1px);
+  }
+}
