@@ -855,10 +855,44 @@ template {
 .landing-third__trails {
   grid-column: 1;
   grid-row: 1;
+  padding-top: 40px;
 }
 
 .trail {
   display: grid;
+  row-gap: 40px;
+}
+
+.trail_hidden {
+  display: none;
+}
+
+.trail__section-image {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.trail__label {
+  grid-row: 2;
+  grid-column: 1;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 28px;
+  background-size: contain;
+  align-self: end;
+  margin-bottom: 14px;
+}
+
+.trail__label_type_highway {
+  background-image: url(../images/label-highway.svg);
+}
+
+.trail__label_type_gravel {
+  background-image: url(../images/label-gravel.svg);
+}
+
+.trail__label_type_tt {
+  background-image: url(../images/label-tt.svg);
 }
 
 .controls {
@@ -869,10 +903,9 @@ template {
 }
 
 .landing-third__controls {
-  grid-column: 1;
-  grid-row: 1;
-  justify-self: end;
-  align-self: start;
+  position: absolute;
+  right: 0;
+  top: 90px;
 }
 
 .controls__arrow {

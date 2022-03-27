@@ -1,3 +1,10 @@
 .trail__label {
-  
+  grid-row: 2;
+  grid-column: 1;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 28px;
+  background-size: contain;
+  align-self: end;
+  margin-bottom: 14px;
 }

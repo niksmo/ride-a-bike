@@ -47,9 +47,13 @@
 @import '../blocks/trails/trails';
 @import '../blocks/landing-third/__trails/landing-third__trails';
 @import '../blocks/trail/trail';
+@import '../blocks/trail/_hidden/trail_hidden';
 @import '../blocks/trail/__title/trail__title';
 @import '../blocks/trail/__section-image/trail__section-image';
 @import '../blocks/trail/__label/trail__label';
+@import '../blocks/trail/__label/_type/trail__label_type_highway';
+@import '../blocks/trail/__label/_type/trail__label_type_gravel';
+@import '../blocks/trail/__label/_type/trail__label_type_tt';
 @import '../blocks/trail/__paragraph/trail__paragraph';
 @import '../blocks/controls/controls';
 @import '../blocks/landing-third/__controls/landing-third__controls';
