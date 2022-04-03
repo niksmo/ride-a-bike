@@ -11,3 +11,13 @@
     transform: rotate(135deg) translate(1px, 1px);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .controls__arrow_right {
+    &::before {
+      width: 11px;
+      height: 11px;
+      transform: rotate(135deg) translate(1px, 1px);
+    }
+  }
+}

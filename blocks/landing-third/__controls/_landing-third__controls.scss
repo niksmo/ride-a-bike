@@ -2,5 +2,13 @@
   position: absolute;
   right: 0;
   top: 90px;
+}
 
+@media screen and (min-width: 768px) {
+  .landing-third__controls {
+    grid-row: 4;
+    grid-column: 1;
+    position: static;
+    justify-content: start;
+  }
 }

@@ -373,6 +373,7 @@ template {
   max-width: 1440px;
   margin: 0 auto;
   font-family: "Inter", Helvetica, sans-serif;
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -471,6 +472,8 @@ template {
 .content {
   padding: 0 18px;
   max-width: 425px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -848,51 +851,98 @@ template {
     line-height: 28px;
   }
 }
-.trails {
-  display: grid;
+.slider {
+  width: 100%;
 }
 
-.landing-third__trails {
+@media screen and (min-width: 768px) {
+  .landing-third__slider {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 50px;
+  }
+}
+.slider__slide {
+  display: grid;
+  grid-template-columns: 49% 50%;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 50px;
+}
+
+.slider__slide_decoration_highway::after {
+  content: "";
+  background-image: url(../images/gravel.png);
+  grid-column: 2;
+  grid-row: 3;
+  background-size: cover;
+}
+.slider__slide_decoration_highway::before {
+  content: "";
+  background-image: url(../images/label-highway.svg);
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  grid-column: 1;
+  grid-row: 3;
+  z-index: 1;
+  align-self: end;
+  height: 40px;
+}
+
+.slider__slide_decoration_gravel::after {
+  content: "";
+  background-image: url(../images/tt-track.png);
+  grid-column: 2;
+  grid-row: 3;
+  background-size: cover;
+}
+.slider__slide_decoration_gravel::before {
+  content: "";
+  background-image: url(../images/label-gravel.svg);
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  grid-column: 1;
+  grid-row: 3;
+  z-index: 1;
+  align-self: end;
+  height: 40px;
+}
+
+.slider__slide_decoration_tt::after {
+  content: "";
+  background-image: url(../images/highway.png);
+  grid-column: 2;
+  grid-row: 3;
+  background-size: cover;
+}
+.slider__slide_decoration_tt::before {
+  content: "";
+  background-image: url(../images/label-tt.svg);
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  grid-column: 1;
+  grid-row: 3;
+  z-index: 1;
+  align-self: end;
+  height: 40px;
+}
+
+.slider__title {
   grid-column: 1;
   grid-row: 1;
-  padding-top: 40px;
+  max-width: 460px;
 }
 
-.trail {
-  display: grid;
-  row-gap: 40px;
-}
-
-.trail_hidden {
-  display: none;
-}
-
-.trail__section-image {
-  grid-row: 2;
+.slider__paragraph {
   grid-column: 1;
-}
-
-.trail__label {
   grid-row: 2;
+  margin-bottom: 30px;
+  max-width: 460px;
+}
+
+.slider__section-image {
   grid-column: 1;
-  background-repeat: no-repeat;
-  width: 70px;
-  height: 28px;
-  background-size: contain;
-  align-self: end;
-  margin-bottom: 14px;
-}
-
-.trail__label_type_highway {
-  background-image: url(../images/label-highway.svg);
-}
-
-.trail__label_type_gravel {
-  background-image: url(../images/label-gravel.svg);
-}
-
-.trail__label_type_tt {
-  background-image: url(../images/label-tt.svg);
+  grid-row: 3;
 }
 
 .controls {
@@ -902,10 +952,14 @@ template {
        column-gap: 10px;
 }
 
-.landing-third__controls {
-  position: absolute;
-  right: 0;
-  top: 90px;
+@media screen and (min-width: 1024px) {
+  .controls {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+.slider__controls {
+  justify-self: start;
 }
 
 .controls__arrow {
@@ -920,6 +974,12 @@ template {
   opacity: 0.6;
 }
 
+@media screen and (min-width: 1024px) {
+  .controls__arrow {
+    width: 50px;
+    height: 50px;
+  }
+}
 .controls__arrow_left::before {
   content: "";
   align-self: center;
@@ -932,6 +992,13 @@ template {
   transform: rotate(-45deg) translate(1px, 1px);
 }
 
+@media screen and (min-width: 1024px) {
+  .controls__arrow_left::before {
+    width: 11px;
+    height: 11px;
+    transform: rotate(-45deg) translate(2px, 2px);
+  }
+}
 .controls__arrow_right::before {
   content: "";
   align-self: center;
@@ -942,4 +1009,12 @@ template {
   border-left: 1px solid #151515;
   border-top: 1px solid #151515;
   transform: rotate(135deg) translate(1px, 1px);
+}
+
+@media screen and (min-width: 1024px) {
+  .controls__arrow_right::before {
+    width: 11px;
+    height: 11px;
+    transform: rotate(135deg) translate(1px, 1px);
+  }
 }/*# sourceMappingURL=index.css.map */

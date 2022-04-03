@@ -44,19 +44,18 @@
 
 // Third section
 @import '../blocks/landing-third/landing-third';
-@import '../blocks/trails/trails';
-@import '../blocks/landing-third/__trails/landing-third__trails';
-@import '../blocks/trail/trail';
-@import '../blocks/trail/_hidden/trail_hidden';
-@import '../blocks/trail/__title/trail__title';
-@import '../blocks/trail/__section-image/trail__section-image';
-@import '../blocks/trail/__label/trail__label';
-@import '../blocks/trail/__label/_type/trail__label_type_highway';
-@import '../blocks/trail/__label/_type/trail__label_type_gravel';
-@import '../blocks/trail/__label/_type/trail__label_type_tt';
-@import '../blocks/trail/__paragraph/trail__paragraph';
+@import '../blocks/slider/slider';
+@import '../blocks/landing-third/__slider/landing-third__slider';
+@import '../blocks/slider/__slides-wrapper/slider__slides-wrapper';
+@import '../blocks/slider/__slide/slider__slide';
+@import '../blocks/slider/__slide/_decoration/slider__slide_decoration_highway';
+@import '../blocks/slider/__slide/_decoration/slider__slide_decoration_gravel';
+@import '../blocks/slider/__slide/_decoration/slider__slide_decoration_tt';
+@import '../blocks/slider/__title/slider__title';
+@import '../blocks/slider/__paragraph/slider__paragraph';
+@import '../blocks/slider/__section-image/slider__section-image';
 @import '../blocks/controls/controls';
-@import '../blocks/landing-third/__controls/landing-third__controls';
+@import '../blocks/slider/__controls/slider__controls';
 @import '../blocks/controls/__arrow/controls__arrow';
 @import '../blocks/controls/__arrow/_left/controls__arrow_left';
 @import '../blocks/controls/__arrow/_right/controls__arrow_right';
