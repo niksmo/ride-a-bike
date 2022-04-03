@@ -14,6 +14,10 @@ const swiper = new Swiper('.swiper', {
     }
   },
   loop: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   navigation: {
     nextEl: '.controls__arrow_right',
     prevEl: '.controls__arrow_left',

@@ -1,6 +1,21 @@
 .slider__slide {
   display: grid;
-  grid-template-columns: 49% 50%;
-  column-gap: 40px;
-  row-gap: 50px;
+  grid-template-columns: 100%;
+  grid-auto-rows: min-content;
+  row-gap: 40px;
+}
+
+@media screen and (min-width:768px) {
+  .slider__slide {
+    grid-template-columns: 49% 45%;
+    column-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider__slide {
+    grid-template-columns: 49% 50%;
+    column-gap: 40px;
+    row-gap: 50px;
+  }
 }
