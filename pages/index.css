@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import '../vendor/swiper-bundle.css';
 html {
   line-height: 1.15;
   /* 1 */
@@ -474,11 +475,13 @@ template {
   max-width: 425px;
   box-sizing: border-box;
   width: 100%;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
   .content {
     max-width: 1440px;
+    overflow: unset;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -682,7 +685,7 @@ template {
     position: -webkit-sticky;
     position: sticky;
     top: 340px;
-    max-width: 440px;
+    max-width: 320px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -693,6 +696,7 @@ template {
 @media screen and (min-width: 1280px) {
   .landing-main__sticky-image {
     top: 466px;
+    max-width: 440px;
   }
 }
 .landing-main__caption {
@@ -1109,4 +1113,147 @@ template {
     height: 11px;
     transform: rotate(135deg) translate(1px, 1px);
   }
+}
+.landing-fourth {
+  display: flex;
+  flex-direction: column;
+  row-gap: unset;
+}
+.landing-fourth::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e3e3e3;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-fourth::before {
+    content: none;
+  }
+}
+.landing-fourth__title {
+  margin-top: 40px;
+}
+
+.filter {
+  box-sizing: border-box;
+  width: 114px;
+  border: 1px solid #E3E3E3;
+  border-radius: 2px;
+  position: relative;
+}
+
+.landing-fourth__filter {
+  margin-top: 40px;
+}
+
+.filter_open .filter__current::after {
+  transform: rotate(45deg) translate(4px, 3px) skew(-2deg, -2deg);
+}
+
+.filter__current {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+}
+.filter__current::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #151515;
+  border-left: 1px solid #151515;
+  transform: rotate(-135deg) translate(-2px, -1px) skew(-2deg, -2deg);
+}
+
+.filter__popup {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 114px;
+  z-index: 2;
+}
+.filter__popup::before {
+  content: "";
+  position: absolute;
+  top: -31px;
+  bottom: 0;
+  right: 0;
+  left: -1px;
+  z-index: -1;
+  background: #fff;
+  box-shadow: 0 5px 15px -5px hsla(0deg, 0%, 0%, 0.25);
+}
+
+.filter__popup_hidden {
+  display: none;
+}
+
+.filter__popup-item {
+  padding: 11px 12px;
+  cursor: pointer;
+}
+
+.filter__popup-text {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.bikes-slider {
+  width: 100%;
+  display: grid;
+  row-gap: 20px;
+}
+
+.bikes-slider_hidden {
+  display: none;
+}
+
+.landing-fourth__bikes-slider {
+  margin-top: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 320px;
+}
+
+.bikes-slider__card {
+  margin: 0 auto;
+}
+
+.card__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  line-height: 0;
+  padding: 15px 15px 3px;
+  border-radius: 20px 20px 0 0;
+  background-color: #f4f4f4;
+  box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06);
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__caption {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 16px;
+  border-radius: 0 0 20px 20px;
+  background-color: #f4f4f4;
 }/*# sourceMappingURL=index.css.map */

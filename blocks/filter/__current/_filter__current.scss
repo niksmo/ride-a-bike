@@ -1,0 +1,17 @@
+.filter__current {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  &::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #151515;
+  border-left: 1px solid #151515;
+  transform: rotate(-135deg) translate(-2px, -1px) skew(-2deg, -2deg);
+  }
+  @include font-params(11px, 14px, 600);
+}

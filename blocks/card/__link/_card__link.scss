@@ -1,0 +1,9 @@
+.card__link {
+  @include reset-link;
+  display: block;
+  line-height: 0;
+  padding: 15px 15px 3px;
+  border-radius: 20px 20px 0 0;
+  background-color: #f4f4f4;
+  box-shadow: 0px 20px 140px rgba(0, 0, 0, .06);
+}

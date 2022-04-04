@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ride a bike</title>
   <link rel="stylesheet" href="./pages/index.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 </head>
 <body class="page">
   <header class="header">
@@ -83,11 +82,98 @@
       </div>
     </section>
 
+    <section class="section landing-fourth page__section">
+      <h2 class="title landing-fourth__title">Велосипеды</h2>
+      <div class="filter landing-fourth__filter">
+        <span class="filter__current">Шоссе</span>
+        <ul class="filter__popup filter__popup_hidden">
+          <li class="filter__popup-item filter__popup-item_bike_highway"><span class="filter__popup-text">Шоссе</span></li>
+          <li class="filter__popup-item filter__popup-item_bike_gravel"><span class="filter__popup-text">Грэвел</span></li>
+          <li class="filter__popup-item filter__popup-item_bike_tt"><span class="filter__popup-text">ТТ</span></li>
+        </ul>
+      </div>
+      <div class="bikes-slider bikes-slider_type_highway landing-fourth__bikes-slider">
+        <div class="bikes-slider__wrapper swiper-wrapper">
+          <div class="bikes-slider__slide swiper-slide">
+            <article class="card bikes-slider__card">
+              <a href="#" class="card__link"><img class="card__image" src="./images/carvelo-caledonia-5.png" alt="велосипед Cervelo Caledonia-5"></a>
+              <p class="card__caption">Cervelo Caledonia-5</p>
+            </article>
+          </div>
+          <div class="bikes-slider__slide swiper-slide">
+            <article class="card bikes-slider__card">
+              <a href="#" class="card__link"><img class="card__image" src="./images/cannondale-systemsix-himod.png" alt="велосипед Cannondale Systemsix Himod"></a>
+              <p class="card__caption">Cannondale Systemsix Himod</p>
+            </article>
+          </div>
+          <div class="bikes-slider__slide swiper-slide">
+            <article class="card bikes-slider__card">
+              <a href="#" class="card__link"><img class="card__image" src="./images/trek-domane-sl7.png" alt="велосипед Trek Domane SL-7"></a>
+              <p class="card__caption">Trek Domane SL-7</p>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="bikes-slider bikes-slider_type_gravel bikes-slider_hidden landing-fourth__bikes-slider">
+        <div class="bikes-slider__wrapper swiper-wrapper">
+          <div class="bikes-slider__slide swiper-slide">
+            <article class="card bikes-slider__card">
+              <a href="#" class="card__link"><img class="card__image" src="./images/cervelo-aspero-grx810.png" alt="велосипед Cervelo Aspero GRX 810"></a>
+              <p class="card__caption">Cervelo Aspero GRX 810</p>
+            </article>
+          </div>
+          <div class="bikes-slider__slide swiper-slide">
+            <article class="card bikes-slider__card">
+              <a href="#" class="card__link"><img class="card__image" src="./images/specialized-sworks-diverge.png" alt="велосипед Specialized S-Works Diverge"></a>
+              <p class="card__caption">Specialized S-Works Diverge</p>
+            </article>
+          </div>
+          <div class="bikes-slider__slide swiper-slide">
+            <article class="card bikes-slider__card">
+              <a href="#" class="card__link"><img class="card__image" src="./images/cannondale-topstone-lefty3.png" alt="велосипед Cannondale Topstone Lefty 3"></a>
+              <p class="card__caption">Cannondale Topstone Lefty 3</p>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="bikes-slider bikes-slider_type_tt bikes-slider_hidden landing-fourth__bikes-slider">
+        <div class="bikes-slider__wrapper swiper-wrapper">
+          <div class="bikes-slider__slide swiper-slide">
+            <article class="card bikes-slider__card">
+              <a href="#" class="card__link"><img class="card__image" src="./images/specialized-srowks-shiv.png" alt="велосипед Specialized S-Works Shiv"></a>
+              <p class="card__caption">Specialized S-Works Shiv</p>
+            </article>
+          </div>
+          <div class="bikes-slider__slide swiper-slide">
+            <article class="card bikes-slider__card">
+              <a href="#" class="card__link"><img class="card__image" src="./images/bmc-timemachine01-one.png" alt="велосипед BMC Timemachine 01 ONE"></a>
+              <p class="card__caption">BMC Timemachine 01 ONE</p>
+            </article>
+          </div>
+          <div class="bikes-slider__slide swiper-slide">
+            <article class="card bikes-slider__card">
+              <a href="#" class="card__link"><img class="card__image" src="./images/cervelo-pseries.png" alt="велосипед CCervelo P-Series"></a>
+              <p class="card__caption">Cervelo P-Series</p>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </section>
+
+
+
     <div class="blank-zone" style="height: 300px;"></div>
   </main>
 
   <footer class="footer"></footer>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="./scripts/slider.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./scripts/slider.js"></script>
+  <script src="./blocks/filter/filter.js"></script>
 </body>
 </html>

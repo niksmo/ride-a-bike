@@ -1,5 +1,7 @@
 @import '../vendor/normalize';
 @import '../vendor/fonts';
+@import '../vendor/swiper-bundle.css';
+// @import url(https://unpkg.com/swiper@8/swiper-bundle.min.css);
 @import '../scss/variables/variables';
 @import '../scss/mixins/mixins';
 @import '../blocks/page/page';
@@ -59,3 +61,25 @@
 @import '../blocks/controls/__arrow/controls__arrow';
 @import '../blocks/controls/__arrow/_left/controls__arrow_left';
 @import '../blocks/controls/__arrow/_right/controls__arrow_right';
+
+// Fourth section
+@import '../blocks/landing-fourth/landing-fourth';
+@import '../blocks/landing-fourth/__title/landing-fourth__title';
+@import '../blocks/filter/filter';
+@import '../blocks/landing-fourth/__filter/landing-fourth_filter';
+@import '../blocks/filter/_open/filter_open';
+@import '../blocks/filter/__current/filter__current';
+@import '../blocks/filter/__popup/filter__popup';
+@import '../blocks/filter/__popup/_hidden/filter__popup_hidden';
+@import '../blocks/filter/__popup-item/filter__popup-item';
+@import '../blocks/filter/__popup-text/filter__popup-text';
+
+//bikes-slider
+@import '../blocks/bikes-slider/bikes-slider';
+@import '../blocks/bikes-slider/_hidden/bikes-slider_hidden';
+@import '../blocks/landing-fourth/__bikes-slider/landing-fourth__bikes-slider';
+@import '../blocks/card/card';
+@import '../blocks/bikes-slider/__card/bikes-slider__card';
+@import '../blocks/card/__link/card__link';
+@import '../blocks/card/__image/card__image';
+@import '../blocks/card/__caption/card__caption';
