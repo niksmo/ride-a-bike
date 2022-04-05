@@ -9,11 +9,18 @@
 @media screen and (min-width:768px) {
   .content {
     max-width: 1440px;
-    overflow: unset;
+    overflow: visible;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .content {
+    padding-left: 80px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .content {
     padding-left: 120px;
     padding-right: 0;

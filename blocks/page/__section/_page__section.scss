@@ -13,7 +13,8 @@
 
 @media screen and (min-width: 1024px) {
   .page__section {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     &:first-of-type {
       padding-top: 0;
     }
