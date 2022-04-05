@@ -14,7 +14,6 @@ const swiper = new Swiper('.swiper', {
     }
   },
   loop: true,
-  effect: 'fade',
   fadeEffect: {
     crossFade: true
   },
@@ -32,7 +31,7 @@ const swiperHighway = new Swiper('.bikes-slider_type_highway', {
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 18
     },
     1024: {
       slidesPerView: 3,
@@ -57,7 +56,7 @@ const swiperGravel = new Swiper('.bikes-slider_type_gravel', {
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 18
     },
     1024: {
       slidesPerView: 3,
@@ -82,7 +81,7 @@ const swiperTt = new Swiper('.bikes-slider_type_tt', {
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 18
     },
     1024: {
       slidesPerView: 3,
