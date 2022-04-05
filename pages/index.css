@@ -905,14 +905,13 @@ template {
 
 @media screen and (min-width: 768px) {
   .slider__slide {
-    grid-template-columns: 49% 45%;
+    grid-template-columns: 49% 1fr;
     -moz-column-gap: 20px;
          column-gap: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
   .slider__slide {
-    grid-template-columns: 49% 50%;
     -moz-column-gap: 40px;
          column-gap: 40px;
     row-gap: 50px;
@@ -1232,7 +1231,7 @@ template {
   left: -1px;
   z-index: -1;
   background: #fff;
-  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 15px -5px hsla(0deg, 0%, 0%, 0.25);
 }
 
 .filter__popup_hidden {
