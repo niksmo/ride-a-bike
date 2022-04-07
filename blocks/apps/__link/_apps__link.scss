@@ -1,0 +1,11 @@
+.apps__link {
+  @include reset-link;
+  @include font-params(14px, 20px, 600)
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__link {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

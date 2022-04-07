@@ -100,8 +100,6 @@
 @import '../blocks/tab-bar/__item/tab-bar__item';
 @import '../blocks/button/button';
 @import '../blocks/button/_active/button_active';
-
-
 //bikes-slider
 @import '../blocks/bikes-slider/bikes-slider';
 @import '../blocks/bikes-slider/_hidden/bikes-slider_hidden';
@@ -111,3 +109,14 @@
 @import '../blocks/card/__link/card__link';
 @import '../blocks/card/__image/card__image';
 @import '../blocks/card/__caption/card__caption';
+
+// Fifth section
+@import '../blocks/landing-fifth/landing-fifth';
+@import '../blocks/landing-fifth/__title/landing-fifth__title';
+@import '../blocks/landing-fifth/__paragraph/landing-fifth__paragraph';
+@import '../blocks/landing-fifth/__apps/landing-fifth__apps';
+@import '../blocks/landing-fifth/__section-image/landing-fifth__section-image';
+@import '../blocks/apps/apps';
+@import '../blocks/apps/__list/apps__list';
+@import '../blocks/apps/__item/apps__item';
+@import '../blocks/apps/__link/apps__link';
