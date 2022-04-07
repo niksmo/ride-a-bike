@@ -20,6 +20,27 @@
 @import '../blocks/content/content';
 @import '../blocks/page/__section/page__section';
 
+// Mobile-menu
+@import '../blocks/mobile-menu/mobile-menu';
+@import '../blocks/mobile-menu/_open/mobile-menu_open';
+@import '../blocks/page/__mobile-menu/page__mobile-menu';
+@import '../blocks/mobile-menu/__close/mobile-menu__close';
+@import '../blocks/mobile-menu/__nav/mobile-menu__nav';
+@import '../blocks/mobile-menu/__list/mobile-menu__list';
+@import '../blocks/mobile-menu/__item/mobile-menu__item';
+@import '../blocks/mobile-menu/__link/mobile-menu__link';
+@import '../blocks/mobile-menu/__theme-switch/mobile-menu__theme-switch';
+@import '../blocks/theme-switch/theme-switch';
+@import '../blocks/theme-switch/__icon/theme-switch__icon';
+@import '../blocks/theme-switch/__icon/_type/theme-switch__icon_type_light-theme';
+@import '../blocks/theme-switch/__icon/_type/theme-switch__icon_type_dark-theme';
+@import '../blocks/switcher/switcher';
+@import '../blocks/switcher/__input/switcher__input';
+@import '../blocks/switcher/__pseudo-input/switcher__pseudo-input';
+@import '../blocks/switcher/__pseudo-input/_checked/switcher__pseudo-input_checked';
+
+
+
 // Main section
 @import '../blocks/section/section';
 @import '../blocks/landing-main/landing-main';

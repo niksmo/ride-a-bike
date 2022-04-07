@@ -1,0 +1,5 @@
+.mobile-menu__link {
+  @include reset-link;
+  @include font-params(18px, 18px, 500);
+  text-align: center;
+}

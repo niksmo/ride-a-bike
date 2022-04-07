@@ -1,5 +1,16 @@
 .header__burger {
-  padding: 13px 18px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  background-image: url(../images/burger.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  position: absolute;
+  right: 9px;
+  top: 14px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
