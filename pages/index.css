@@ -1552,4 +1552,117 @@ template {
     font-size: 18px;
     line-height: 28px;
   }
+}
+.footer {
+  padding: 60px 18px 16px;
+  background-color: #efefef;
+}
+
+.footer__heading {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    display: none;
+  }
+}
+.footer__theme-switch {
+  display: none;
+}
+
+.form-email {
+  position: relative;
+}
+
+.form-email__input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  max-width: 360px;
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 11px 50px 11px 20px;
+  border: 1px solid rgba(199, 199, 199, 0.5019607843);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-email__input::-moz-placeholder {
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: 500;
+  opacity: 0.7;
+  color: #222222;
+}
+.form-email__input:-ms-input-placeholder {
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: 500;
+  opacity: 0.7;
+  color: #222222;
+}
+.form-email__input::placeholder {
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: 500;
+  opacity: 0.7;
+  color: #222222;
+}
+.form-email__input:focus {
+  outline: none;
+  cursor: text;
+}
+.form-email__input:hover::-moz-placeholder {
+  opacity: 1;
+}
+.form-email__input:hover:-ms-input-placeholder {
+  opacity: 1;
+}
+.form-email__input:hover::placeholder {
+  opacity: 1;
+}
+.form-email__input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.form-email__input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.form-email__input:focus::placeholder {
+  opacity: 0;
+}
+.form-email__input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.form-email__input:focus:-moz-placeholder {
+  opacity: 0;
+}
+.form-email__input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.form-email__input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.form-email__submit {
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 11px 22px 11px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.form-email__submit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }/*# sourceMappingURL=index.css.map */
