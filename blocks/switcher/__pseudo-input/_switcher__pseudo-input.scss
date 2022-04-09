@@ -1,3 +1,20 @@
 .switcher__pseudo-input {
-  
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+  &::before {
+    content: '';
+    margin: 2px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: #24B47E;
+    border-radius: 50%;
+    transition: transform .3s ease-out;
+    will-change: transform;
+  }
 }
