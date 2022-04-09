@@ -1683,6 +1683,10 @@ template {
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
+  transition: opacity 0.15s linear;
+}
+.apps__link:hover {
+  opacity: 0.75;
 }
 
 @media screen and (min-width: 1024px) {
