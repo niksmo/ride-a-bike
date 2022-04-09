@@ -1,3 +1,11 @@
 .footer__heading {
   @include font-params(24px, 32px, 600);
+  margin: 0 0 40px;
+  max-width: 230px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__heading {
+    margin-bottom: 50px;
+  }
 }

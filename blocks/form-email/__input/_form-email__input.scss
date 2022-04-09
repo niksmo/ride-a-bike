@@ -3,8 +3,8 @@
   width: 100%;
   box-sizing: border-box;
   height: 50px;
-  max-width: 360px;
   @include font-params(13px, 28px, 500);
+  color: #151515;
   background-color: transparent;
   padding: 11px 50px 11px 20px;
   border: 1px solid #C7C7C780;

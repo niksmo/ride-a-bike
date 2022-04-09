@@ -125,10 +125,12 @@
 @import '../blocks/footer/footer';
 @import '../blocks/footer/__heading/footer__heading';
 @import '../blocks/footer/__form-email/footer__form-email';
+@import '../blocks/footer/__row/footer__row';
 @import '../blocks/footer/__copyright/footer__copyright';
 @import '../blocks/footer/__logo/footer__logo';
 @import '../blocks/footer/__theme-switch/footer__theme-switch';
 //form
-@import '../blocks/form-email/form__email';
+@import '../blocks/form-email/form-email';
 @import '../blocks/form-email/__input/form-email__input';
 @import '../blocks/form-email/__submit/form-email__submit';
+@import '../blocks/form-email/__submit/_hidden/form-email__submit_hidden';

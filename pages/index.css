@@ -500,7 +500,7 @@ template {
 
 @media screen and (min-width: 768px) {
   .content {
-    max-width: 1440px;
+    max-width: none;
     overflow: visible;
   }
 }
@@ -1516,8 +1516,13 @@ template {
     max-width: 460px;
   }
 }
+.landing-fifth__apps {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .landing-fifth__apps {
+    margin-bottom: 0;
     grid-column: 1;
     grid-row: 4/5;
   }
@@ -1554,16 +1559,70 @@ template {
   }
 }
 .footer {
+  display: flex;
+  flex-direction: column;
   padding: 60px 18px 16px;
   background-color: #efefef;
+  width: 100%;
+  max-width: 425px;
+  box-sizing: border-box;
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 80px 80px 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
 .footer__heading {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
+  margin: 0 0 40px;
+  max-width: 230px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__heading {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__form-email {
+    max-width: 360px;
+  }
+}
+.footer__row {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #CFCFCF;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__copyright {
+    font-weight: 600;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__logo {
     display: none;
@@ -1582,10 +1641,10 @@ template {
   width: 100%;
   box-sizing: border-box;
   height: 50px;
-  max-width: 360px;
   font-size: 13px;
   line-height: 28px;
   font-weight: 500;
+  color: #151515;
   background-color: transparent;
   padding: 11px 50px 11px 20px;
   border: 1px solid rgba(199, 199, 199, 0.5019607843);
@@ -1649,6 +1708,9 @@ template {
 }
 
 .form-email__submit {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.1s linear, opacity 0.11s linear;
   font-size: 13px;
   line-height: 28px;
   font-weight: 500;
@@ -1665,4 +1727,10 @@ template {
   position: absolute;
   inset: 0;
   z-index: 1;
+  left: -11px;
+}
+
+.form-email__submit_hidden {
+  visibility: hidden;
+  opacity: 0;
 }/*# sourceMappingURL=index.css.map */
