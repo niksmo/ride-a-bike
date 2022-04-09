@@ -14,6 +14,7 @@ const swiper = new Swiper('.swiper', {
     }
   },
   loop: true,
+  effect: 'fade',
   fadeEffect: {
     crossFade: true
   },

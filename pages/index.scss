@@ -89,8 +89,10 @@
 @import '../blocks/landing-fourth/__title/landing-fourth__title';
 @import '../blocks/filter/filter';
 @import '../blocks/landing-fourth/__filter/landing-fourth_filter';
-@import '../blocks/filter/_open/filter_open';
+@import '../blocks/filter/__current-wrapper/filter__current-wrapper';
 @import '../blocks/filter/__current/filter__current';
+@import '../blocks/filter/__accordion/_filter__accordion';
+@import '../blocks/filter/__accordion/_opened/filter__accordion_opened';
 @import '../blocks/filter/__popup/filter__popup';
 @import '../blocks/filter/__popup/_hidden/filter__popup_hidden';
 @import '../blocks/filter/__popup-item/filter__popup-item';

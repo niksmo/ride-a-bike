@@ -8,7 +8,7 @@
 </head>
 <body class="page">
   <header class="header">
-    <button class="header__burger"></button>
+    <button class="header__burger" type="button"></button>
     <nav class="header__nav header__nav_theme_light">
       <ul class="header__nav-list">
         <li class="header__nav-item">
@@ -21,7 +21,6 @@
           <a href="#training" class="header__link">Тренировки</a>
         </li>
       </ul>
-    </nav>
     </nav>
   </header>
 
@@ -77,7 +76,10 @@
     <section class="section landing-fourth page__section page__section_size_narrow" id="bikes">
       <h2 class="title landing-fourth__title">Велосипеды</h2>
       <div class="filter landing-fourth__filter">
-        <span class="filter__current">Шоссе</span>
+        <div class="filter__current-wrapper">
+          <button class="filter__current" type="button">Шоссе</button>
+          <span class="filter__accordion"></span>
+        </div>
         <ul class="filter__popup filter__popup_hidden">
           <li class="filter__popup-item filter__popup-item_bike_highway"><span class="filter__popup-text">Шоссе</span></li>
           <li class="filter__popup-item filter__popup-item_bike_gravel"><span class="filter__popup-text">Грэвел</span></li>
@@ -86,13 +88,13 @@
       </div>
       <ul class="tab-bar landing-fourth__tab-bar">
         <li class="tab-bar__item">
-          <button class="button button_bike_highway button_active">Шоссе</button>
+          <button class="button button_bike_highway button_active" type="button">Шоссе</button>
         </li>
         <li class="tab-bar__item">
-          <button class="button button_bike_gravel">Грэвел</button>
+          <button class="button button_bike_gravel" type="button">Грэвел</button>
         </li>
         <li class="tab-bar__item">
-          <button class="button button_bike_tt">ТТ</button>
+          <button class="button button_bike_tt" type="button">ТТ</button>
         </li>
       </ul>
       <div class="bikes-slider bikes-slider_type_highway landing-fourth__bikes-slider">
@@ -209,7 +211,7 @@
   </footer>
 
   <div class="mobile-menu page__mobile-menu">
-    <button class="mobile-menu__close" aria-label="закрыть меню"></button>
+    <button class="mobile-menu__close" type="button" aria-label="закрыть меню"></button>
     <nav class="mobile-menu__nav">
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item">

@@ -482,6 +482,10 @@ template {
   font-size: 12px;
   line-height: 14px;
   font-weight: 500;
+  transition: opacity 0.15s linear;
+}
+.header__link:hover {
+  opacity: 0.75;
 }
 
 @media screen and (min-width: 1024px) {
@@ -600,6 +604,10 @@ template {
   line-height: 18px;
   font-weight: 500;
   text-align: center;
+  transition: opacity 0.15s ease;
+}
+.mobile-menu__link:hover {
+  opacity: 0.75;
 }
 
 .mobile-menu__theme-switch {
@@ -787,11 +795,36 @@ template {
   box-sizing: border-box;
   text-align: center;
   color: #fff;
-  background-color: #24B47E;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.link-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #24B47E;
+  border-radius: 4px;
+  z-index: -2;
+}
+.link-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #319E75;
+  border-radius: 4px;
+  z-index: -1;
+  transition: width 0.6s ease-in-out;
+}
+.link-button:hover::after {
+  width: 100%;
 }
 
 .landing-main__link-button {
@@ -1227,9 +1260,13 @@ template {
   border-radius: 50%;
   display: grid;
   cursor: pointer;
+  transition: opacity 0.15s ease;
 }
 .controls__arrow:hover {
   opacity: 0.6;
+}
+.controls__arrow:hover::before {
+  opacity: 0.75;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1327,7 +1364,6 @@ template {
   width: 114px;
   border: 1px solid #E3E3E3;
   border-radius: 2px;
-  position: relative;
 }
 
 .landing-fourth__filter {
@@ -1339,28 +1375,50 @@ template {
     display: none;
   }
 }
-.filter_open .filter__current::after {
-  transform: rotate(45deg) translate(4px, 3px) skew(-2deg, -2deg);
+.filter__current-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 3;
 }
 
 .filter__current {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 12px;
-  position: relative;
-  z-index: 3;
+  width: 100%;
+  text-align: left;
+  padding: 8px 0 8px 12px;
+  border: none;
+  display: block;
+  background-color: transparent;
   cursor: pointer;
   font-size: 11px;
   line-height: 14px;
   font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.filter__current::after {
+.filter__current::before {
   content: "";
-  width: 6px;
-  height: 6px;
-  border-top: 1px solid #151515;
-  border-left: 1px solid #151515;
-  transform: rotate(-135deg) translate(-2px, -1px) skew(-2deg, -2deg);
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+}
+
+.filter__accordion {
+  flex-shrink: 0;
+  width: 24px;
+  height: 30px;
+  background-image: url(../images/icon_accordion.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.1s linear;
+}
+
+.filter__accordion_opened {
+  transform: rotate(-180deg);
 }
 
 .filter__popup {
@@ -1433,6 +1491,10 @@ template {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+.button:hover {
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1445,6 +1507,10 @@ template {
   color: #151515;
   opacity: 1;
   font-weight: 600;
+  transition: opacity 0.15s ease;
+}
+.button_active:hover {
+  opacity: 0.75;
 }
 
 .bikes-slider {
@@ -1496,6 +1562,10 @@ template {
   border-radius: 20px 20px 0 0;
   background-color: #f4f4f4;
   box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s linear;
+}
+.card__link:hover {
+  box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.11);
 }
 
 @media screen and (min-width: 768px) {
@@ -1725,6 +1795,8 @@ template {
   font-weight: 500;
   opacity: 0.7;
   color: #222222;
+  -moz-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
 }
 .form-email__input:-ms-input-placeholder {
   font-size: 13px;
@@ -1732,6 +1804,8 @@ template {
   font-weight: 500;
   opacity: 0.7;
   color: #222222;
+  -ms-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
 }
 .form-email__input::placeholder {
   font-size: 13px;
@@ -1739,6 +1813,7 @@ template {
   font-weight: 500;
   opacity: 0.7;
   color: #222222;
+  transition: opacity 0.15s linear;
 }
 .form-email__input:focus {
   outline: none;
