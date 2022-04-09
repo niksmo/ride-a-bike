@@ -5,8 +5,12 @@
   border-radius: 50%;
   display: grid;
   cursor: pointer;
+  transition: opacity .15s ease;
   &:hover {
     opacity: .6;
+  }
+  &:hover::before {
+    opacity: .75;
   }
 }
 

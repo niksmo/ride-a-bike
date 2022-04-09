@@ -2,4 +2,8 @@
   color: $text-primary-color-light;
   opacity: 1;
   font-weight: 600;
+  transition: opacity .15s ease;
+  &:hover {
+    opacity: .75;
+  }
 }

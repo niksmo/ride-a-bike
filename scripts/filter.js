@@ -1,5 +1,6 @@
 const filter = document.querySelector('.filter');
 const accordion = filter.querySelector('.filter__current');
+const accordionIcon = filter.querySelector('.filter__accordion')
 const popup = filter.querySelector('.filter__popup');
 
 const filterItems = filter.querySelectorAll('.filter__popup-item');
@@ -19,7 +20,7 @@ const bikesTt = document.querySelector('.bikes-slider_type_tt');
 
 
 function toggleAccordion () {
-  filter.classList.toggle('filter_open')
+  accordionIcon.classList.toggle('filter__accordion_opened');
   popup.classList.toggle('filter__popup_hidden');
 }
 

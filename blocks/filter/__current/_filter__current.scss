@@ -1,17 +1,22 @@
 .filter__current {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 12px;
-  position: relative;
-  z-index: 3;
+  width: 100%;
+  text-align: left;
+  padding: 8px 0 8px 12px;
+  border: none;
+  display: block;
+  background-color: transparent;
   cursor: pointer;
-  &::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-top: 1px solid #151515;
-  border-left: 1px solid #151515;
-  transform: rotate(-135deg) translate(-2px, -1px) skew(-2deg, -2deg);
-  }
   @include font-params(11px, 14px, 600);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  &::before {
+    content: '';
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+  }
 }
