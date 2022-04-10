@@ -1,18 +1,18 @@
 @import '../vendor/normalize';
 @import '../vendor/fonts';
-@import '../vendor/swiper-bundle.css';
-// @import url(https://unpkg.com/swiper@8/swiper-bundle.min.css);
-@import '../scss/variables/variables';
+@import '../vendor/swiper-bundle';
 @import '../scss/mixins/mixins';
 @import '../blocks/page/page';
+@import '../blocks/page/_theme/page_theme_light';
+@import '../blocks/page/_theme/page_theme_dark';
 
 // Header
 @import '../blocks/header/header';
 @import '../blocks/header/__burger/header__burger';
+@import '../blocks/header/__burger-icon/header__burger-icon';
 @import '../blocks/header/__burger/_hidden/header__burger_hidden';
 @import '../blocks/header/__close-menu/_hidden/header__close-menu_hidden';
 @import '../blocks/header/__nav/header__nav';
-@import '../blocks/header/__nav/_theme/header__nav_theme_light';
 @import '../blocks/header/__nav-list/header__nav-list';
 @import '../blocks/header/__nav-item/header__nav-item';
 @import '../blocks/header/__link/header__link';
@@ -25,6 +25,7 @@
 @import '../blocks/mobile-menu/_open/mobile-menu_open';
 @import '../blocks/page/__mobile-menu/page__mobile-menu';
 @import '../blocks/mobile-menu/__close/mobile-menu__close';
+@import '../blocks/mobile-menu/__close-icon/mobile-menu__close-icon';
 @import '../blocks/mobile-menu/__nav/mobile-menu__nav';
 @import '../blocks/mobile-menu/__list/mobile-menu__list';
 @import '../blocks/mobile-menu/__item/mobile-menu__item';
@@ -92,6 +93,7 @@
 @import '../blocks/filter/__current-wrapper/filter__current-wrapper';
 @import '../blocks/filter/__current/filter__current';
 @import '../blocks/filter/__accordion/_filter__accordion';
+@import '../blocks/filter/__icon/filter__icon';
 @import '../blocks/filter/__accordion/_opened/filter__accordion_opened';
 @import '../blocks/filter/__popup/filter__popup';
 @import '../blocks/filter/__popup/_hidden/filter__popup_hidden';

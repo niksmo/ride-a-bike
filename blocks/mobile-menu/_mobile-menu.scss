@@ -2,6 +2,6 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  background-color: $background-main-color-light;
+  background-color: var(--bg-color-primary);
   padding: 0 18px;
 }

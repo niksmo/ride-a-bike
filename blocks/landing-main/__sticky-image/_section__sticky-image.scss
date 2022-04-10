@@ -5,7 +5,7 @@
   box-sizing: border-box;
   padding: 4% 10%;
   border-radius: 20px;
-  background-color: #f4f4f4;
+  background-color: var(--card-bg-color);
   box-shadow: -20px 60px 220px rgba(0, 0, 0, .2);
   position: absolute;
   bottom: 11%;

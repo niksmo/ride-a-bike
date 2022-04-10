@@ -1,7 +1,7 @@
 .controls__arrow {
   width: 24px;
   height: 24px;
-  background-color: #EBEBEB;
+  background-color: var(--slider-button-el-bg-color);
   border-radius: 50%;
   display: grid;
   cursor: pointer;

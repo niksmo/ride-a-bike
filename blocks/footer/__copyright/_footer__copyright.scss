@@ -1,7 +1,7 @@
 .footer__copyright {
   @include reset-text;
   @include font-params(14px, 20px, 500);
-  color: #CFCFCF;
+  color: var(--copyright-text-color);
 }
 
 @media screen and (min-width: 768px) {

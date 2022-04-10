@@ -4,16 +4,16 @@
   box-sizing: border-box;
   height: 50px;
   @include font-params(13px, 28px, 500);
-  color: #151515;
+  color: var(--text-color-primary);
   background-color: transparent;
   padding: 11px 50px 11px 20px;
-  border: 1px solid #C7C7C780;
+  border: 1px solid var(--input-el-color);
   border-radius: 4px;
   cursor: pointer;
   &::placeholder {
     @include font-params(13px, 28px, 500);
     opacity: .7;
-    color: #222222;
+    color: var(--text-color-secondary);
     transition: opacity .15s linear;
   }
   &:focus {

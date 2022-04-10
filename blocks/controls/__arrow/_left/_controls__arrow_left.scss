@@ -6,8 +6,8 @@
     display: block;
     width: 6px;
     height: 6px;
-    border-left: 1px solid #151515;
-    border-top: 1px solid #151515;
+    border-left: 1px solid var(--slider-button-el-color);
+    border-top: 1px solid var(--slider-button-el-color);
     transform: rotate(-45deg) translate(1px, 1px);
   }
 }

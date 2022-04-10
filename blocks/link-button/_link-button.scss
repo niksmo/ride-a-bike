@@ -3,7 +3,7 @@
   @include font-params(14px, 18px, 600, 1px);
   box-sizing: border-box;
   text-align: center;
-  color: #fff;
+  color: var(--solid-button-text-color);
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #24B47E;
+    background-color: var(--solid-button-bg-primary-color);
     border-radius: 4px;
     z-index: -2;
   }
@@ -26,7 +26,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #319E75;
+    background-color: var(--solid-button-bg-animation-color);
     border-radius: 4px;
     z-index: -1;
     transition: width .6s ease-in-out;
