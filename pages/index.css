@@ -1236,10 +1236,6 @@ button.swiper-pagination-bullet {
   stroke: var(--text-color-primary);
 }
 
-.header__burger_hidden {
-  display: none;
-}
-
 .header__close-menu_hidden {
   display: none;
 }
