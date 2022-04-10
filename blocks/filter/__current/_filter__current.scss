@@ -10,6 +10,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: var(--text-color-primary);
   &::before {
     content: '';
     right: 0;

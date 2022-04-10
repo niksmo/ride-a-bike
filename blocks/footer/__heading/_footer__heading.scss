@@ -2,6 +2,7 @@
   @include font-params(24px, 32px, 600);
   margin: 0 0 40px;
   max-width: 230px;
+  color: var(--text-color-primary);
 }
 
 @media screen and (min-width: 768px) {

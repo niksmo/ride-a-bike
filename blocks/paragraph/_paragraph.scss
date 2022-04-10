@@ -1,7 +1,7 @@
 .paragraph {
   @include reset-text;
   @include font-params(12px, 18px);
-  color: $text-secondary-color-light;
+  color: var(--text-color-secondary);
   opacity: .7;
 }
 

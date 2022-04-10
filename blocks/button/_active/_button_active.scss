@@ -1,5 +1,5 @@
 .button_active {
-  color: $text-primary-color-light;
+  color: var(--text-color-primary);
   opacity: 1;
   font-weight: 600;
   transition: opacity .15s ease;
