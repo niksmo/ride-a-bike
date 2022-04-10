@@ -1212,6 +1212,7 @@ button.swiper-pagination-bullet {
   }
 }
 .header__burger {
+  padding: 0;
   background-color: transparent;
   border: none;
   width: 40px;
