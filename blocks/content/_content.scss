@@ -1,0 +1,28 @@
+.content {
+  padding: 0 18px;
+  max-width: 425px;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width:768px) {
+  .content {
+    max-width: none;
+    overflow: visible;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    padding-left: 80px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content {
+    padding-left: 120px;
+    padding-right: 0;
+  }
+}

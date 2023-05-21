@@ -1,0 +1,9 @@
+.footer__theme-switch {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__theme-switch {
+    display: flex;
+  }
+}

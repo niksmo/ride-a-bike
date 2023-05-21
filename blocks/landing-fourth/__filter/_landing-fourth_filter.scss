@@ -1,0 +1,9 @@
+.landing-fourth__filter {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-fourth__filter {
+    display: none;
+  }
+}

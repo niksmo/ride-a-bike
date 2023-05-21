@@ -1,0 +1,25 @@
+.landing-fourth {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--mobile-divider-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing-fourth {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: min-content;
+  }
+  .landing-fourth {
+    &::before {
+      content: none;
+    }
+  }
+}

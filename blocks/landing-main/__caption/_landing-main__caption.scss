@@ -1,0 +1,33 @@
+.landing-main__caption {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-main__caption {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-rows: min-content;
+    position: absolute;
+    top: 29%;
+    column-gap: 30px;
+    grid-column: 1;
+    grid-row: 4;
+    color: var(--text-color-primary);
+    @include font-params(12px, 18px);
+    &::after {
+      content: '';
+      width: 132px;
+      height: 2px;
+      background-color: var(--decorative-el-color);
+      display: block;
+      margin: 8px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-main__caption {
+    font-size: 18px;
+  }
+  
+}

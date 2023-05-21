@@ -1,0 +1,11 @@
+.landing-fifth__apps {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-fifth__apps {
+    margin-bottom: 0;
+    grid-column: 1;
+    grid-row: 4/5;
+  }
+}

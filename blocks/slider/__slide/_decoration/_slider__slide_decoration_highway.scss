@@ -1,0 +1,38 @@
+.slider__slide_decoration_highway {
+  &::before {
+    content: "";
+    background-image: url(../images/label-highway.svg);
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 1;
+    grid-row: 2;
+    z-index: 1;
+    align-self: end;
+    height: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider__slide_decoration_highway {
+    &::after {
+      content: '';
+      background-image: url(../images/gravel.png);
+      grid-column: 2;
+      grid-row: 3;
+      background-size: cover;
+    };
+    &::before {
+      grid-row: 3;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider__slide_decoration_highway {
+    &::before {
+      margin-bottom: 16px;
+      height: 40px;
+    }
+  }
+}

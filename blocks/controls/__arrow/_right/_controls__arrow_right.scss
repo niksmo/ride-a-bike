@@ -1,0 +1,23 @@
+.controls__arrow_right {
+  &::before {
+    content: "";
+    align-self: center;
+    justify-self: center;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid var(--slider-button-el-color);
+    border-top: 1px solid var(--slider-button-el-color);
+    transform: rotate(135deg) translate(1px, 1px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .controls__arrow_right {
+    &::before {
+      width: 11px;
+      height: 11px;
+      transform: rotate(135deg) translate(1px, 1px);
+    }
+  }
+}

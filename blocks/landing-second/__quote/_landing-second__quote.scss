@@ -1,0 +1,17 @@
+.landing-second__quote {
+  @include reset-text;
+  @include font-params(23px, 29px, 600, -.5px);
+}
+
+@media screen and (min-width: 768px) {
+  .landing-second__quote {
+    grid-area: quote;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-second__quote {
+    @include font-params(34px, 44px, 600, -.5px);
+  }
+  
+}

@@ -1,0 +1,16 @@
+.switcher__input {
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.switcher__input:focus-visible + .switcher__pseudo-input::after {
+  content: '';
+  display: block;
+  inset: -1px;
+  position: absolute;
+  border: 2px solid rgb(0, 95, 204);
+  border-radius: 14px;
+}

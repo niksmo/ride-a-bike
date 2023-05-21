@@ -1,0 +1,9 @@
+.mobile-menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}

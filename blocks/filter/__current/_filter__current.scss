@@ -1,0 +1,24 @@
+.filter__current {
+  width: 100%;
+  text-align: left;
+  padding: 8px 0 8px 12px;
+  border: none;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  @include font-params(11px, 14px, 600);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--text-color-primary);
+  &::before {
+    content: '';
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+}

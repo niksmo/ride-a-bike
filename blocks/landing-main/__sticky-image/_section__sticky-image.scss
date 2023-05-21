@@ -1,0 +1,36 @@
+.landing-main__sticky-image {
+  line-height: 0;
+  width: 83%;
+  max-width: 440px;
+  box-sizing: border-box;
+  padding: 4% 10%;
+  border-radius: 20px;
+  background-color: var(--card-bg-color);
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, .2);
+  position: absolute;
+  bottom: 11%;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-main__sticky-image {
+    padding: 20px 50px;
+    position: sticky;
+    top: 340px;
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-main__sticky-image {
+    top: 420px;
+  }
+  
+}
+
+@media screen and (min-width: 1280px) {
+  .landing-main__sticky-image {
+    top: 392px + 74px;
+    max-width: 440px;
+  }
+  
+}

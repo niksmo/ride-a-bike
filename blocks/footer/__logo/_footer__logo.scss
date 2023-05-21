@@ -1,0 +1,10 @@
+.footer__logo {
+  stroke: var(--text-color-primary);
+  fill: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    display: none;
+  }
+}

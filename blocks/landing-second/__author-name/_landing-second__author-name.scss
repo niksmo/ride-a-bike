@@ -1,0 +1,11 @@
+.landing-second__author-name {
+  @include reset-text;
+  @include font-params(14px, 22px, 500);
+  color: var(--text-color-primary);
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-second__author-name {
+    @include font-params(20px, 32px, 500);
+  }
+}

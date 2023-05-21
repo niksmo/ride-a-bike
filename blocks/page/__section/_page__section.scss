@@ -1,0 +1,22 @@
+.page__section {
+  position: relative;
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .page__section {
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+}

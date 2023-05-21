@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) {
+  .landing-main {
+    grid-template-columns: 1fr 57%;
+    grid-template-rows: min-content min-content min-content 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-main {
+    grid-template-columns: 420px 1fr;
+    row-gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .landing-main {
+    grid-template-columns: 460px 1fr;
+    row-gap: 50px;
+  }
+}
+

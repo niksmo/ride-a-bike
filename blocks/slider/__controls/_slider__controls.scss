@@ -1,0 +1,14 @@
+.slider__controls {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 9px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .slider__controls {
+    position: static;
+    justify-self: start;
+  }
+}

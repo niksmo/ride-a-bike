@@ -1,0 +1,41 @@
+.form-email__input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  @include font-params(13px, 28px, 500);
+  color: var(--text-color-primary);
+  background-color: transparent;
+  padding: 11px 50px 11px 20px;
+  border: 1px solid var(--input-el-color);
+  border-radius: 4px;
+  cursor: pointer;
+  &::placeholder {
+    @include font-params(13px, 28px, 500);
+    opacity: .7;
+    color: var(--text-color-secondary);
+    transition: opacity .15s linear;
+  }
+  &:focus {
+    outline: none;
+    cursor: text;
+  }
+  &:hover::placeholder {
+    opacity: 1;
+  }
+  &:focus::placeholder {
+    opacity: 0;
+  }
+  &:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+  &:focus:-moz-placeholder {
+    opacity: 0;
+  }
+  &:focus::-moz-placeholder {
+    opacity: 0;
+  }
+  &:focus:-ms-input-placeholder {
+    opacity: 0;
+  }
+}

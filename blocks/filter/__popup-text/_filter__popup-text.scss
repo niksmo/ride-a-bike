@@ -1,0 +1,4 @@
+.filter__popup-text {
+  @include font-params(11px, 14px, 400);
+  color: var(--text-color-primary);
+}

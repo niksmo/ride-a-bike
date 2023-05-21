@@ -1,0 +1,10 @@
+.mobile-menu__link {
+  @include reset-link;
+  @include font-params(18px, 18px, 500);
+  text-align: center;
+  transition: opacity .15s ease;
+  color: var(--text-color-primary);
+  &:hover {
+    opacity: .75;
+  }
+}

@@ -1,0 +1,9 @@
+.filter__accordion {
+  flex-shrink: 0;
+  width: 24px;
+  height: 30px;
+  transition: transform 0.1s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

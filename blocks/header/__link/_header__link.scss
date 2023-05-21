@@ -1,0 +1,15 @@
+.header__link {
+  @include reset-link;
+  @include font-params(12px, 14px, 500);
+  transition: opacity .15s linear;
+  &:hover {
+    opacity: .75;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,21 @@
+.form-email__submit {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility .1s linear, opacity .11s linear;
+  @include font-params(13px, 28px, 500);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 11px 22px 11px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--text-color-primary);
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    left: -11px;
+  }
+}

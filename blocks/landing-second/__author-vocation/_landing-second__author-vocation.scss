@@ -1,0 +1,12 @@
+.landing-second__author-vocation {
+  @include reset-text;
+  @include font-params(10px, 16px);
+  color: var(--text-color-secondary);
+  opacity: .7;
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-second__author-vocation {
+    @include font-params(16px, 28px);
+  }
+}

@@ -1,0 +1,18 @@
+.landing-third {
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--mobile-divider-color);
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing-third {
+    &::before {
+      content: none;
+    }
+  }
+}

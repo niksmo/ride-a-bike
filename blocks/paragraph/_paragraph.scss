@@ -1,0 +1,12 @@
+.paragraph {
+  @include reset-text;
+  @include font-params(12px, 18px);
+  color: var(--text-color-secondary);
+  opacity: .7;
+}
+
+@media screen and (min-width: 1024px) {
+  .paragraph {
+    @include font-params(18px, 28px)
+  }
+}

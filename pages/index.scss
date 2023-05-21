@@ -1,0 +1,138 @@
+@import '../vendor/normalize';
+@import '../vendor/fonts/fonts';
+@import '../vendor/swiper-bundle';
+@import '../scss/mixins/mixins';
+@import '../blocks/page/page';
+@import '../blocks/page/_theme/page_theme_light';
+@import '../blocks/page/_theme/page_theme_dark';
+
+// Header
+@import '../blocks/header/header';
+@import '../blocks/header/__burger/header__burger';
+@import '../blocks/header/__burger-icon/header__burger-icon';
+@import '../blocks/header/__close-menu/_hidden/header__close-menu_hidden';
+@import '../blocks/header/__nav/header__nav';
+@import '../blocks/header/__nav-list/header__nav-list';
+@import '../blocks/header/__nav-item/header__nav-item';
+@import '../blocks/header/__link/header__link';
+
+@import '../blocks/content/content';
+@import '../blocks/page/__section/page__section';
+
+// Mobile-menu
+@import '../blocks/mobile-menu/mobile-menu';
+@import '../blocks/mobile-menu/_open/mobile-menu_open';
+@import '../blocks/page/__mobile-menu/page__mobile-menu';
+@import '../blocks/mobile-menu/__close/mobile-menu__close';
+@import '../blocks/mobile-menu/__close-icon/mobile-menu__close-icon';
+@import '../blocks/mobile-menu/__nav/mobile-menu__nav';
+@import '../blocks/mobile-menu/__list/mobile-menu__list';
+@import '../blocks/mobile-menu/__item/mobile-menu__item';
+@import '../blocks/mobile-menu/__link/mobile-menu__link';
+@import '../blocks/mobile-menu/__theme-switch/mobile-menu__theme-switch';
+@import '../blocks/theme-switch/theme-switch';
+@import '../blocks/theme-switch/__icon/theme-switch__icon';
+@import '../blocks/theme-switch/__icon/_type/theme-switch__icon_type_light-theme';
+@import '../blocks/theme-switch/__icon/_type/theme-switch__icon_type_dark-theme';
+@import '../blocks/switcher/switcher';
+@import '../blocks/switcher/__input/switcher__input';
+@import '../blocks/switcher/__pseudo-input/switcher__pseudo-input';
+@import '../blocks/switcher/__pseudo-input/_checked/switcher__pseudo-input_checked';
+
+
+
+// Main section
+@import '../blocks/section/section';
+@import '../blocks/landing-main/landing-main';
+@import '../blocks/title/title';
+@import '../blocks/landing-main/__title/landing-main__title';
+@import '../blocks/section-image/section-image';
+@import '../blocks/landing-main/__section-image/landing-main__section-image';
+@import '../blocks/paragraph/paragraph';
+@import '../blocks/landing-main/__paragraph/landing-main__paragraph';
+@import '../blocks/link-button/link-button';
+@import '../blocks/landing-main/__link-button/landing-main__link-button';
+@import '../blocks/landing-main/__sticky-wrapper/landing-main__sticky-wrapper';
+@import '../blocks/landing-main/__sticky-image/section__sticky-image';
+@import '../blocks/landing-main/__caption/landing-main__caption';
+
+// Second section
+@import '../blocks/landing-second/landing-second';
+@import '../blocks/landing-second/__section-image/landing-second__section-image';
+@import '../blocks/landing-second/__blockquote/landing-second__blockquote';
+@import '../blocks/landing-second/__quote/landing-second__quote';
+@import '../blocks/landing-second/__caption-wrapper/landing-second__caption-wrapper';
+@import '../blocks/landing-second/__author-name/landing-second__author-name';
+@import '../blocks/landing-second/__author-vocation/landing-second__author-vocation';
+
+// Third section
+@import '../blocks/landing-third/landing-third';
+@import '../blocks/slider/slider';
+@import '../blocks/landing-third/__slider/landing-third__slider';
+@import '../blocks/slider/__slides-wrapper/slider__slides-wrapper';
+@import '../blocks/slider/__slide/slider__slide';
+@import '../blocks/slider/__slide/_decoration/slider__slide_decoration_highway';
+@import '../blocks/slider/__slide/_decoration/slider__slide_decoration_gravel';
+@import '../blocks/slider/__slide/_decoration/slider__slide_decoration_tt';
+@import '../blocks/slider/__title/slider__title';
+@import '../blocks/slider/__paragraph/slider__paragraph';
+@import '../blocks/slider/__section-image/slider__section-image';
+@import '../blocks/controls/controls';
+@import '../blocks/slider/__controls/slider__controls';
+@import '../blocks/controls/__arrow/controls__arrow';
+@import '../blocks/controls/__arrow/_left/controls__arrow_left';
+@import '../blocks/controls/__arrow/_right/controls__arrow_right';
+
+// Fourth section
+@import '../blocks/landing-fourth/landing-fourth';
+@import '../blocks/page/__section/_size/page__section_size_narrow';
+@import '../blocks/landing-fourth/__title/landing-fourth__title';
+@import '../blocks/filter/filter';
+@import '../blocks/landing-fourth/__filter/landing-fourth_filter';
+@import '../blocks/filter/__current-wrapper/filter__current-wrapper';
+@import '../blocks/filter/__current/filter__current';
+@import '../blocks/filter/__accordion/_filter__accordion';
+@import '../blocks/filter/__icon/filter__icon';
+@import '../blocks/filter/__accordion/_opened/filter__accordion_opened';
+@import '../blocks/filter/__popup/filter__popup';
+@import '../blocks/filter/__popup/_hidden/filter__popup_hidden';
+@import '../blocks/filter/__popup-item/filter__popup-item';
+@import '../blocks/filter/__popup-text/filter__popup-text';
+@import '../blocks/tab-bar/tab-bar';
+@import '../blocks/landing-fourth/__tab-bar/landing-fourth__tab-bar';
+@import '../blocks/tab-bar/__item/tab-bar__item';
+@import '../blocks/button/button';
+@import '../blocks/button/_active/button_active';
+//bikes-slider
+@import '../blocks/bikes-slider/bikes-slider';
+@import '../blocks/bikes-slider/_hidden/bikes-slider_hidden';
+@import '../blocks/landing-fourth/__bikes-slider/landing-fourth__bikes-slider';
+@import '../blocks/card/card';
+@import '../blocks/bikes-slider/__card/bikes-slider__card';
+@import '../blocks/card/__link/card__link';
+@import '../blocks/card/__image/card__image';
+@import '../blocks/card/__caption/card__caption';
+
+// Fifth section
+@import '../blocks/landing-fifth/landing-fifth';
+@import '../blocks/landing-fifth/__title/landing-fifth__title';
+@import '../blocks/landing-fifth/__paragraph/landing-fifth__paragraph';
+@import '../blocks/landing-fifth/__apps/landing-fifth__apps';
+@import '../blocks/landing-fifth/__section-image/landing-fifth__section-image';
+@import '../blocks/apps/__list/apps__list';
+@import '../blocks/apps/__item/apps__item';
+@import '../blocks/apps/__link/apps__link';
+
+// Footer
+@import '../blocks/footer/footer';
+@import '../blocks/footer/__heading/footer__heading';
+@import '../blocks/footer/__form-email/footer__form-email';
+@import '../blocks/footer/__row/footer__row';
+@import '../blocks/footer/__copyright/footer__copyright';
+@import '../blocks/footer/__logo/footer__logo';
+@import '../blocks/footer/__theme-switch/footer__theme-switch';
+//form
+@import '../blocks/form-email/form-email';
+@import '../blocks/form-email/__input/form-email__input';
+@import '../blocks/form-email/__submit/form-email__submit';
+@import '../blocks/form-email/__submit/_hidden/form-email__submit_hidden';

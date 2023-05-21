@@ -1,0 +1,5 @@
+.switcher__pseudo-input_checked {
+  &::before {
+    transform: translateX(20px);
+  }
+}

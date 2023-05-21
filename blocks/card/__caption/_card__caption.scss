@@ -1,0 +1,26 @@
+.card__caption {
+  @include reset-text;
+  @include font-params(14px, 18px, 600);
+  text-align: center;
+  padding-bottom: 16px;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--card-bg-color);
+  color: #151515;
+}
+
+@media screen and (min-width: 768px) {
+  .card__caption {
+    text-align: left;
+    padding-top: 22px;
+    padding-bottom: 0;
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--text-color-primary);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card__caption {
+    @include font-params(18px, 22px, 600);
+  }
+}

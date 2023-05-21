@@ -1,0 +1,18 @@
+.slider__paragraph {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .slider__paragraph {
+    grid-row: 2;
+    margin-bottom: 30px;
+    min-height: 72px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider__paragraph {
+    max-width: 460px;
+  }
+}
